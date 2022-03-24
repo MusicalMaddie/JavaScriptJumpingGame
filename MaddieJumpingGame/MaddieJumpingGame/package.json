@@ -1,0 +1,9 @@
+{
+  "name": "maddie-jumping-game",
+  "version": "0.0.0",
+  "description": "MaddieJumpingGame",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}

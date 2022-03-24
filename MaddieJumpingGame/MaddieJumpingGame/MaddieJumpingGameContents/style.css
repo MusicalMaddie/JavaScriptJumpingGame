@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#jumpingGame {
+    width:550px;
+    height:200px;
+    border: 1px solid black;
+    margin:auto;
+}
+#character{
+    width:20px;
+    height:50px;
+    background-color:red;
+    position:relative;
+    top:150px;
+    margin-left:20px;
+}
+#mainPerson {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.animate {
+    animation: jump 500ms infinite;
+}
+
+h5 {
+    text-align: center;
+    font-family:monospace;
+    font-size: large;
+}
+
+@keyframes jump {
+    0%{top:150px;}
+    30%{top:100px;}
+    70%{top:100px;}
+    100%{top:150px;}
+}
+#bug {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.imageChosen {
+    margin:auto;
+}
+
+#block{
+    width:20px;
+    height:20px;
+    position:relative;
+    top:130px;
+    left:480px;
+}
+.tempPause {
+    animation-play-state: paused;
+    display: none;
+    visibility:hidden;
+}
+
+.startBlock {
+    animation: block 1200ms linear infinite;
+}
+
+@keyframes block{
+    0%{left:550px;}
+    100%{left:-20px;}
+}
+/*
+.wiggleAnimation {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+*/
